@@ -23,6 +23,18 @@
 - **故障注入基准**：`benchmarks/fault_injection.py` 循环杀 leader 并测量恢复时间
 - **零依赖**：只用 Python 标准库，便于评审、教学和 CI
 
+## 面试演示
+
+![demo](docs/demo.gif)
+
+```bash
+python demo.py
+```
+
+一条命令启动三节点集群 → 写入数据 → 杀死 leader → 自动恢复 → 读出数据。
+
+完整面试答辩材料见 [`INTERVIEW.md`](INTERVIEW.md)。
+
 ## 快速开始
 
 要求 Python 3.10+，无需安装任何第三方依赖。
